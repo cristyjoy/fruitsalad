@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fruit Salad</title>
+</head>
+<body>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/card.css">
+	
+	
+		<h1 style="color:red;">My Three Fav Fruits Ever</h1>
+	<!-- Navigation -->
+<nav class="">
+  <a href="" class="">Home</a>
+  <a href="about page.html">About</a>
+
+  <!-- Slide Show -->
+<section>
+  <img class="mySlides" src="pictures/durian.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="pictures/banana.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="pictures/apple.jpeg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="" style="max-width:600px">
+  <h2 class="">FRUIT SALAD</h2>
+  <p class=""><i>HEALTHY FOR THE BODY</i></p>
+</section>
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+
+	<h2>Durian</h2>
+	<p>It contains vitamin C, folic acid, thiamin, riboflavin, niacin, B6, and vitamin A. Important minerals such as potassium, iron, calcium, magnesium, sodium, zinc, phosphorus are found in durian. It also contains nutrients such as phytonutrients, water, protein, and beneficial dietary fats.</p>
+	<img src = "pictures/durian.jpeg" alt ="Durian" width="500" height="377">
+	 <figcaption>Fig.1 - The durian is the fruit of several tree species belonging to the genus Durio. There are 30 recognised Durio species, at least nine of which produce edible fruit, and over 300 named varieties in Thailand,
+
+	<h2>Banana</h2>
+	<p>Bananas can be helpful in overcoming depression "due to high levels of tryptophan, which the body converts to serotonin, the mood-elevating brain neurotransmitter," Flores said. Plus, vitamin B6 can help you sleep well, and magnesium helps to relax muscles.</p>
+	<img src = "pictures/banana.jpeg" alt ="Banana" width="500" height="377">
+	 <figcaption>Fig.2- A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called plantains, in contrast to dessert bananas</figcaption>
+
+	 <h2>Apple</h2>
+	<p>Apples are extremely rich in important antioxidants, flavanoids, and dietary fiber. The phytonutrients and antioxidants in apples may help reduce the risk of developing cancer, hypertension, diabetes, and heart disease. This article provides a nutritional profile of the fruit and its possible health benefits.</p>
+	<img src = "pictures/apple.jpeg" alt ="Apple" width="500" height="377">
+	 <figcaption>Fig.3- n apple is a sweet, edible fruit produced by an apple tree. Apple trees are cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.</figcaption>
+
+
+</body>
+</html>
